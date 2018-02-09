@@ -1,0 +1,100 @@
+.title {
+    font-size: 2em;
+}
+
+.danger {
+    color: red;
+}
+
+.hunt {
+    color: #9c9c00; /* yellow */
+}
+
+.nature {
+    color: green;
+}
+
+.coexistence {
+    color: #2fa397; /* turquoise */
+}
+
+.elements {
+    color: darkblue; /* blue */
+}
+
+.extreme {
+    color: purple;
+}
+
+.tight {
+    margin: 0;
+}
+
+table.focus {
+    border-collapse: collapse;
+    color: inherit; /* because focus type colorize text but we do not want it here */
+}
+
+table.focus.danger thead tr:last-child th {
+    border-bottom: 2px solid red;
+}
+
+table.focus.hunt thead tr:last-child th {
+    border-bottom: 2px solid #9c9c00;
+}
+
+table.focus thead tr:last-child th {
+    padding-bottom: 0.2em;
+}
+
+table.focus tr:first-child td {
+    padding-top: 0.2em;
+}
+
+table.focus tr.consecration-needed {
+    /* a dummy record to whisper this class by IDE */
+}
+
+table.focus tr.consecration-needed td {
+    border-top: 2px solid black;
+    padding-top: 0.2em;
+}
+
+table.grid.default td {
+    font-size: initial;
+    line-height: initial;
+    text-align: left;
+}
+
+ol {
+    padding-left: 1.2em;
+}
+
+.quote h4 {
+    margin: 0;
+}
+
+.new-block {
+    margin-top: 1em;
+}
+
+.for-players {
+    font-style: italic;
+    font-weight: bold;
+}
+
+table.content.main td {
+    padding-left: 12px;
+}
+
+table.content.main td.sub {
+    padding-left: 24px;
+}
+
+table.content.single-column th:last-child {
+    text-align: left;
+}
+
+table.content.single-column td:last-child {
+    text-align: left;
+}
