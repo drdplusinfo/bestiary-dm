@@ -26,6 +26,12 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "scripts": {
+    "pre-update-cmd": [
+      "cd $PWD/vendor/drd-plus/rules-html-skeleton && git checkout *.css"
+    ],
+    "pre-install-cmd": [
+      "cd $PWD/vendor/drd-plus/rules-html-skeleton && git checkout *.css"
+    ],
     "pre-autoload-dump": [
       "mkdir -p $PWD/Tests/",
       "cp -r $PWD/vendor/drd-plus/rules-html-skeleton/Tests/* $PWD/Tests/",
@@ -34,8 +40,12 @@
       "rm -fr ./css/generic && ln -s ../vendor/drd-plus/rules-html-skeleton/css/generic ./css/generic",
       "rm -fr ./js/generic && ln -s ../vendor/drd-plus/rules-html-skeleton/js/generic ./js/generic"
     ],
+    "post-update-cmd": [
+      "./vendor/drd-plus/rules-html-skeleton/bin/assets --dir=css"
+    ],
     "post-install-cmd": [
-      "rm -f cache/pages/*"
+      "rm -f cache/pages/*",
+      "./vendor/drd-plus/rules-html-skeleton/bin/assets --dir=css"
     ]
   }
 }

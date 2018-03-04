@@ -13,16 +13,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jaroslavtyc/drd-plus-rules-html-skeleton.git",
-                "reference": "9ec808f5febb5b966488a370522a473148dcd9f9"
+                "reference": "b087ed3f3a2d0c702cd2492f77485fb38e8bf109"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jaroslavtyc/drd-plus-rules-html-skeleton/zipball/9ec808f5febb5b966488a370522a473148dcd9f9",
-                "reference": "9ec808f5febb5b966488a370522a473148dcd9f9",
+                "url": "https://api.github.com/repos/jaroslavtyc/drd-plus-rules-html-skeleton/zipball/b087ed3f3a2d0c702cd2492f77485fb38e8bf109",
+                "reference": "b087ed3f3a2d0c702cd2492f77485fb38e8bf109",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
+                "granam/exceptions-hierarchy": "dev-master",
                 "granam/string": "dev-master",
                 "php": ">=7.1",
                 "phpgt/dom": "^1.0",
@@ -52,7 +53,48 @@
                 "helper",
                 "rules"
             ],
-            "time": "2018-02-28 13:46:29"
+            "time": "2018-03-04 07:31:31"
+        },
+        {
+            "name": "granam/exceptions-hierarchy",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jaroslavtyc/granam-exceptions-hierarchy.git",
+                "reference": "a90ec9df0bdb91e41dd85ed42cf6d5eed0444c22"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jaroslavtyc/granam-exceptions-hierarchy/zipball/a90ec9df0bdb91e41dd85ed42cf6d5eed0444c22",
+                "reference": "a90ec9df0bdb91e41dd85ed42cf6d5eed0444c22",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Granam\\": "Granam/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "The hierarchy skeleton of exceptions in a project",
+            "homepage": "https://github.com/jaroslavtyc/granam-exceptions-hierarchy",
+            "keywords": [
+                "exception",
+                "hierarchy",
+                "logic",
+                "php",
+                "runtime"
+            ],
+            "time": "2017-02-19 12:25:09"
         },
         {
             "name": "granam/scalar",
@@ -160,12 +202,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jaroslavtyc/granam-string.git",
-                "reference": "14c55f2ab3982d0a30068445c666824e7e10c6ae"
+                "reference": "8b6ac7c0aff1803ad923d5b859371dc15c9028c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jaroslavtyc/granam-string/zipball/14c55f2ab3982d0a30068445c666824e7e10c6ae",
-                "reference": "14c55f2ab3982d0a30068445c666824e7e10c6ae",
+                "url": "https://api.github.com/repos/jaroslavtyc/granam-string/zipball/8b6ac7c0aff1803ad923d5b859371dc15c9028c6",
+                "reference": "8b6ac7c0aff1803ad923d5b859371dc15c9028c6",
                 "shasum": ""
             },
             "require": {
@@ -206,7 +248,7 @@
                 "php",
                 "string"
             ],
-            "time": "2017-10-12 11:38:23"
+            "time": "2018-03-04 07:23:46"
         },
         {
             "name": "granam/tools",
@@ -474,12 +516,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "8df7344c55a84691ec559db5c9e6f8a2c7086443"
+                "reference": "5eb59cd740f7f76a7ad680089b6db941c645b7ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/8df7344c55a84691ec559db5c9e6f8a2c7086443",
-                "reference": "8df7344c55a84691ec559db5c9e6f8a2c7086443",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/5eb59cd740f7f76a7ad680089b6db941c645b7ba",
+                "reference": "5eb59cd740f7f76a7ad680089b6db941c645b7ba",
                 "shasum": ""
             },
             "conflict": {
@@ -509,9 +551,9 @@
                 "doctrine/mongodb-odm-bundle": ">=2,<3.0.1",
                 "doctrine/orm": ">=2,<2.4.8|>=2.5,<2.5.1",
                 "dompdf/dompdf": ">=0.6,<0.6.2",
-                "drupal/core": ">=8,<8.3.7",
+                "drupal/core": ">=8,<8.4.5",
                 "drupal/drupal": ">=8,<8.3.7",
-                "erusev/parsedown": "<=1.6.4",
+                "erusev/parsedown": "<1.7",
                 "ezsystems/ezpublish-legacy": ">=5.3,<5.3.12.3|>=5.4,<5.4.11.3|>=2017.8,<2017.8.1.1|>=2017.12,<2017.12.2.1",
                 "firebase/php-jwt": "<2",
                 "friendsofsymfony/rest-bundle": ">=1.2,<1.2.2",
@@ -572,7 +614,7 @@
                 "symfony/web-profiler-bundle": ">=2,<2.3.19|>=2.4,<2.4.9|>=2.5,<2.5.4",
                 "symfony/yaml": ">=2,<2.0.22|>=2.1,<2.1.7",
                 "thelia/backoffice-default-template": ">=2.1,<2.1.2",
-                "thelia/thelia": ">=2.1.0-beta1,<2.1.3|>=2.1,<2.1.2",
+                "thelia/thelia": ">=2.1,<2.1.2|>=2.1.0-beta1,<2.1.3",
                 "titon/framework": ">=0,<9.9.99",
                 "twig/twig": "<1.20",
                 "typo3/cms": ">=6.2,<6.2.30|>=7,<7.6.22|>=8,<8.7.5",
@@ -622,7 +664,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2018-02-27 21:53:45"
+            "time": "2018-03-02 15:31:47"
         },
         {
             "name": "symfony/css-selector",
