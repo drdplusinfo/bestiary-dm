@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "395af3b88a671983d9a4068c249dfc29",
+    "hash": "15f90439f5639b10cfc55d71d749a891",
     "content-hash": "5dfbb5c785a16c776ffaf449a8b6be87",
     "packages": [
         {
@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jaroslavtyc/drd-plus-rules-html-skeleton.git",
-                "reference": "e573448710299d992955e65b52d40c1d3b382497"
+                "reference": "d9b1e3625f06b5390f8a05ca9225e88b27690fd2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jaroslavtyc/drd-plus-rules-html-skeleton/zipball/e573448710299d992955e65b52d40c1d3b382497",
-                "reference": "e573448710299d992955e65b52d40c1d3b382497",
+                "url": "https://api.github.com/repos/jaroslavtyc/drd-plus-rules-html-skeleton/zipball/d9b1e3625f06b5390f8a05ca9225e88b27690fd2",
+                "reference": "d9b1e3625f06b5390f8a05ca9225e88b27690fd2",
                 "shasum": ""
             },
             "require": {
@@ -53,7 +53,7 @@
                 "helper",
                 "rules"
             ],
-            "time": "2018-03-04 15:09:52"
+            "time": "2018-03-06 07:42:12"
         },
         {
             "name": "granam/exceptions-hierarchy",
@@ -202,12 +202,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jaroslavtyc/granam-string.git",
-                "reference": "8b6ac7c0aff1803ad923d5b859371dc15c9028c6"
+                "reference": "f1392a76438481bd5c4fd79e238df4fb9e46c07f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jaroslavtyc/granam-string/zipball/8b6ac7c0aff1803ad923d5b859371dc15c9028c6",
-                "reference": "8b6ac7c0aff1803ad923d5b859371dc15c9028c6",
+                "url": "https://api.github.com/repos/jaroslavtyc/granam-string/zipball/f1392a76438481bd5c4fd79e238df4fb9e46c07f",
+                "reference": "f1392a76438481bd5c4fd79e238df4fb9e46c07f",
                 "shasum": ""
             },
             "require": {
@@ -218,7 +218,7 @@
             "require-dev": {
                 "ext-mbstring": "*",
                 "granam/exceptions-hierarchy": "~4.0",
-                "mockery/mockery": "~0.9",
+                "mockery/mockery": "~1.0",
                 "phpunit/phpunit": "~6.0"
             },
             "suggest": {
@@ -248,7 +248,7 @@
                 "php",
                 "string"
             ],
-            "time": "2018-03-04 07:23:46"
+            "time": "2018-03-06 07:07:49"
         },
         {
             "name": "granam/tools",
@@ -458,16 +458,16 @@
         },
         {
             "name": "piwik/device-detector",
-            "version": "3.9.2",
+            "version": "3.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/matomo-org/device-detector.git",
-                "reference": "2c69fc7a73df8e78ba712771dc43b58a637d5395"
+                "reference": "d2769e8b6e983cf31666a0f5b921ef1c8564cfb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/matomo-org/device-detector/zipball/2c69fc7a73df8e78ba712771dc43b58a637d5395",
-                "reference": "2c69fc7a73df8e78ba712771dc43b58a637d5395",
+                "url": "https://api.github.com/repos/matomo-org/device-detector/zipball/d2769e8b6e983cf31666a0f5b921ef1c8564cfb1",
+                "reference": "d2769e8b6e983cf31666a0f5b921ef1c8564cfb1",
                 "shasum": ""
             },
             "require": {
@@ -508,7 +508,7 @@
                 "parser",
                 "useragent"
             ],
-            "time": "2018-02-04 18:36:27"
+            "time": "2018-03-05 12:45:57"
         },
         {
             "name": "roave/security-advisories",
@@ -516,12 +516,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "5eb59cd740f7f76a7ad680089b6db941c645b7ba"
+                "reference": "0a373baba09d0d125d69f0e7a27a8dae2d068796"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/5eb59cd740f7f76a7ad680089b6db941c645b7ba",
-                "reference": "5eb59cd740f7f76a7ad680089b6db941c645b7ba",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/0a373baba09d0d125d69f0e7a27a8dae2d068796",
+                "reference": "0a373baba09d0d125d69f0e7a27a8dae2d068796",
                 "shasum": ""
             },
             "conflict": {
@@ -552,7 +552,7 @@
                 "doctrine/orm": ">=2,<2.4.8|>=2.5,<2.5.1",
                 "dompdf/dompdf": ">=0.6,<0.6.2",
                 "drupal/core": ">=8,<8.4.5",
-                "drupal/drupal": ">=8,<8.3.7",
+                "drupal/drupal": ">=8,<8.4.5",
                 "erusev/parsedown": "<1.7",
                 "ezsystems/ezpublish-legacy": ">=5.3,<5.3.12.3|>=5.4,<5.4.11.3|>=2017.8,<2017.8.1.1|>=2017.12,<2017.12.2.1",
                 "firebase/php-jwt": "<2",
@@ -575,7 +575,7 @@
                 "oro/crm": ">=1.7,<1.7.4",
                 "oro/platform": ">=1.7,<1.7.4",
                 "padraic/humbug_get_contents": "<1.1.2",
-                "pagarme/pagarme-php": ">=0,<9.9.99",
+                "pagarme/pagarme-php": ">=0,<3",
                 "paragonie/random_compat": "<2",
                 "phpmailer/phpmailer": ">=5,<5.2.24",
                 "phpunit/phpunit": ">=4.8.19,<4.8.28|>=5.0.10,<5.6.3",
@@ -664,7 +664,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2018-03-02 15:31:47"
+            "time": "2018-03-05 15:57:14"
         },
         {
             "name": "symfony/css-selector",
