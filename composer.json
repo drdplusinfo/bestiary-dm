@@ -46,7 +46,7 @@
     "post-install-cmd": [
       "./vendor/drd-plus/rules-html-skeleton/bin/assets --dir=css",
       "rm -f cache/pages/*",
-      "wget https://bestiar.ppj.drdplus.info --post-data=\"trial=1\" --background --output-document=- >> /dev/null"
+      "wget https://bestiar.ppj.drdplus.info --post-data=\"trial=1\" --background --output-document=- --output-file=- >> /dev/null"
     ]
   }
 }
