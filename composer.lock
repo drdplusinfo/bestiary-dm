@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "15f90439f5639b10cfc55d71d749a891",
+    "hash": "bc427e6f698a8b76d251efe65f87c28e",
     "content-hash": "5dfbb5c785a16c776ffaf449a8b6be87",
     "packages": [
         {
@@ -202,12 +202,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jaroslavtyc/granam-string.git",
-                "reference": "f1392a76438481bd5c4fd79e238df4fb9e46c07f"
+                "reference": "dd2942317b13a6306ce645bdce4082086ec9913d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jaroslavtyc/granam-string/zipball/f1392a76438481bd5c4fd79e238df4fb9e46c07f",
-                "reference": "f1392a76438481bd5c4fd79e238df4fb9e46c07f",
+                "url": "https://api.github.com/repos/jaroslavtyc/granam-string/zipball/dd2942317b13a6306ce645bdce4082086ec9913d",
+                "reference": "dd2942317b13a6306ce645bdce4082086ec9913d",
                 "shasum": ""
             },
             "require": {
@@ -248,7 +248,7 @@
                 "php",
                 "string"
             ],
-            "time": "2018-03-06 07:07:49"
+            "time": "2018-03-07 11:01:24"
         },
         {
             "name": "granam/tools",
@@ -516,12 +516,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "0a373baba09d0d125d69f0e7a27a8dae2d068796"
+                "reference": "efecacb8182814c1476c7b38c1053ef78823e127"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/0a373baba09d0d125d69f0e7a27a8dae2d068796",
-                "reference": "0a373baba09d0d125d69f0e7a27a8dae2d068796",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/efecacb8182814c1476c7b38c1053ef78823e127",
+                "reference": "efecacb8182814c1476c7b38c1053ef78823e127",
                 "shasum": ""
             },
             "conflict": {
@@ -589,7 +589,7 @@
                 "silverstripe/forum": "<=0.6.1|>=0.7,<=0.7.3",
                 "silverstripe/framework": ">=3,<3.3",
                 "silverstripe/userforms": "<3",
-                "simplesamlphp/saml2": "<1.10.4|>=2,<2.3.5|>=3,<3.1.1",
+                "simplesamlphp/saml2": "<1.10.6|>=2,<2.3.8|>=3,<3.1.4",
                 "simplesamlphp/simplesamlphp": "<1.15.2",
                 "simplesamlphp/simplesamlphp-module-infocard": "<1.0.1",
                 "socalnick/scn-social-auth": "<1.15.2",
@@ -614,7 +614,7 @@
                 "symfony/web-profiler-bundle": ">=2,<2.3.19|>=2.4,<2.4.9|>=2.5,<2.5.4",
                 "symfony/yaml": ">=2,<2.0.22|>=2.1,<2.1.7",
                 "thelia/backoffice-default-template": ">=2.1,<2.1.2",
-                "thelia/thelia": ">=2.1,<2.1.2|>=2.1.0-beta1,<2.1.3",
+                "thelia/thelia": ">=2.1.0-beta1,<2.1.3|>=2.1,<2.1.2",
                 "titon/framework": ">=0,<9.9.99",
                 "twig/twig": "<1.20",
                 "typo3/cms": ">=6.2,<6.2.30|>=7,<7.6.22|>=8,<8.7.5",
@@ -664,7 +664,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2018-03-05 15:57:14"
+            "time": "2018-03-06 15:15:10"
         },
         {
             "name": "symfony/css-selector",
