@@ -2,12 +2,13 @@
   "name": "drd-plus/dm-rules",
   "license": "proprietary",
   "type": "library",
-  "description": "Drd+ rules for DM",
+  "description": "Drd+ rules for DM personal bestiary",
   "keywords": [
     "Drd plus",
     "rules",
     "handbook",
-    "dm"
+    "dm",
+    "bestiary"
   ],
   "autoload": {
     "psr-4": {
