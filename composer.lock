@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jaroslavtyc/drd-plus-rules-html-skeleton.git",
-                "reference": "dd959c7deb500e8262f2587353c50146e5dce9a7"
+                "reference": "2874a4a5dda77ecdd774f8fa4808f581175c50cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jaroslavtyc/drd-plus-rules-html-skeleton/zipball/dd959c7deb500e8262f2587353c50146e5dce9a7",
-                "reference": "dd959c7deb500e8262f2587353c50146e5dce9a7",
+                "url": "https://api.github.com/repos/jaroslavtyc/drd-plus-rules-html-skeleton/zipball/2874a4a5dda77ecdd774f8fa4808f581175c50cf",
+                "reference": "2874a4a5dda77ecdd774f8fa4808f581175c50cf",
                 "shasum": ""
             },
             "require": {
@@ -53,7 +53,7 @@
                 "helper",
                 "rules"
             ],
-            "time": "2018-03-18 14:42:24"
+            "time": "2018-03-23 10:40:16"
         },
         {
             "name": "granam/exceptions-hierarchy",
@@ -516,12 +516,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "1b2f1f59ff8fc933e4d61ee45214ff3228e20c75"
+                "reference": "4a272b63452f4d8ff0d48a759e59db9359a9b5b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/1b2f1f59ff8fc933e4d61ee45214ff3228e20c75",
-                "reference": "1b2f1f59ff8fc933e4d61ee45214ff3228e20c75",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/4a272b63452f4d8ff0d48a759e59db9359a9b5b7",
+                "reference": "4a272b63452f4d8ff0d48a759e59db9359a9b5b7",
                 "shasum": ""
             },
             "conflict": {
@@ -594,7 +594,7 @@
                 "simplesamlphp/simplesamlphp": "<1.15.2",
                 "simplesamlphp/simplesamlphp-module-infocard": "<1.0.1",
                 "socalnick/scn-social-auth": "<1.15.2",
-                "squizlabs/php_codesniffer": ">=1,<2.8.1",
+                "squizlabs/php_codesniffer": ">=1,<2.8.1|>=3,<3.0.1",
                 "stormpath/sdk": ">=0,<9.9.99",
                 "swiftmailer/swiftmailer": ">=4,<5.4.5",
                 "symfony/dependency-injection": ">=2,<2.0.17",
@@ -623,11 +623,13 @@
                 "typo3/neos": ">=1.1,<1.1.3|>=1.2,<1.2.13|>=2,<2.0.4",
                 "willdurand/js-translation-bundle": "<2.1.1",
                 "yiisoft/yii": ">=1.1.14,<1.1.15",
-                "yiisoft/yii2": "<2.0.14",
+                "yiisoft/yii2": "<2.0.15",
                 "yiisoft/yii2-bootstrap": "<2.0.4",
-                "yiisoft/yii2-dev": "<2.0.14",
+                "yiisoft/yii2-dev": "<2.0.15",
+                "yiisoft/yii2-elasticsearch": "<2.0.5",
                 "yiisoft/yii2-gii": "<2.0.4",
                 "yiisoft/yii2-jui": "<2.0.4",
+                "yiisoft/yii2-redis": "<2.0.8",
                 "zendframework/zend-cache": ">=2.4,<2.4.8|>=2.5,<2.5.3",
                 "zendframework/zend-captcha": ">=2,<2.4.9|>=2.5,<2.5.2",
                 "zendframework/zend-crypt": ">=2,<2.4.9|>=2.5,<2.5.2",
@@ -665,7 +667,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2018-03-15 17:53:05"
+            "time": "2018-03-22 21:16:54"
         },
         {
             "name": "symfony/css-selector",
