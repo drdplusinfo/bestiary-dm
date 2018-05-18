@@ -34,7 +34,8 @@
       "if [ -d ./vendor/drd-plus/rules-html-skeleton ]; then cd ./vendor/drd-plus/rules-html-skeleton && git checkout *.css; fi"
     ],
     "pre-autoload-dump": [
-      "cp -r vendor/drd-plus/rules-html-skeleton/DrdPlus/Tests/RulesSkeleton DrdPlus/Tests/BestiaryDm",
+      "mkdir --parents DrdPlus/Tests/BestiaryDm",
+      "cp -r vendor/drd-plus/rules-html-skeleton/DrdPlus/Tests/RulesSkeleton/* DrdPlus/Tests/BestiaryDm",
       "cp --no-clobber vendor/drd-plus/rules-html-skeleton/phpunit.xml.dist $PWD",
       "rm -f ./images/generic && ln -s ../vendor/drd-plus/rules-html-skeleton/images/generic ./images/generic",
       "rm -f ./css/generic && ln -s ../vendor/drd-plus/rules-html-skeleton/css/generic ./css/generic",
