@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jaroslavtyc/drd-plus-frontend-skeleton.git",
-                "reference": "a7bedf1e934cb0e4bf95162a87896856f6b031e8"
+                "reference": "78a28a8bf6580481d91c9407c3f8975c337267c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jaroslavtyc/drd-plus-frontend-skeleton/zipball/a7bedf1e934cb0e4bf95162a87896856f6b031e8",
-                "reference": "a7bedf1e934cb0e4bf95162a87896856f6b031e8",
+                "url": "https://api.github.com/repos/jaroslavtyc/drd-plus-frontend-skeleton/zipball/78a28a8bf6580481d91c9407c3f8975c337267c4",
+                "reference": "78a28a8bf6580481d91c9407c3f8975c337267c4",
                 "shasum": ""
             },
             "require": {
@@ -55,7 +55,7 @@
                 "pages",
                 "view"
             ],
-            "time": "2018-05-18 08:43:39"
+            "time": "2018-05-18 15:36:01"
         },
         {
             "name": "drd-plus/rules-html-skeleton",
@@ -63,12 +63,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jaroslavtyc/drd-plus-rules-html-skeleton.git",
-                "reference": "b6572fbef04fcb760123f6a181de4e01d92e347e"
+                "reference": "24f6f77d85b29b41f598fd0cf7e13bc4f55eda8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jaroslavtyc/drd-plus-rules-html-skeleton/zipball/b6572fbef04fcb760123f6a181de4e01d92e347e",
-                "reference": "b6572fbef04fcb760123f6a181de4e01d92e347e",
+                "url": "https://api.github.com/repos/jaroslavtyc/drd-plus-rules-html-skeleton/zipball/24f6f77d85b29b41f598fd0cf7e13bc4f55eda8a",
+                "reference": "24f6f77d85b29b41f598fd0cf7e13bc4f55eda8a",
                 "shasum": ""
             },
             "require": {
@@ -103,7 +103,7 @@
                 "helper",
                 "rules"
             ],
-            "time": "2018-05-18 08:59:44"
+            "time": "2018-05-18 16:17:05"
         },
         {
             "name": "granam/exceptions-hierarchy",
