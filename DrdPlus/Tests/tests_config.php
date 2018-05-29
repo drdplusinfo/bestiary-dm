@@ -8,3 +8,5 @@ $testsConfiguration->setSomeExpectedTableIds(['tabulka_druhu_pohybu_nestvur']);
 $testsConfiguration->setBlockNamesToExpectedContent([]);
 $testsConfiguration->setHasProtectedAccess(false);
 $testsConfiguration->setHasCharacterSheet(false);
+$testsConfiguration->setCanBeBoughtOnEshop(false);
+$testsConfiguration->setHasIntroduction(false);
