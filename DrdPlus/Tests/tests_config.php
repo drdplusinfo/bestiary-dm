@@ -1,12 +1,13 @@
 <?php
 global $testsConfiguration;
 $testsConfiguration = new \DrdPlus\Tests\RulesSkeleton\TestsConfiguration();
-$testsConfiguration->setHasLinkToSingleJournal(false);
-$testsConfiguration->setHasLinksToJournals(false);
-$testsConfiguration->setHasLinkToSingleJournal(false);
+$testsConfiguration->disableHasLinkToSingleJournal();
+$testsConfiguration->disableHasLinksToJournals();
+$testsConfiguration->disableHasLinkToSingleJournal();
+$testsConfiguration->disableHasProtectedAccess();
+$testsConfiguration->disableHasCharacterSheet();
+$testsConfiguration->disableCanBeBoughtOnEshop();
+$testsConfiguration->disableHasIntroduction();
+$testsConfiguration->disableHasCustomBodyContent();
 $testsConfiguration->setSomeExpectedTableIds(['tabulka_druhu_pohybu_nestvur']);
 $testsConfiguration->setBlockNamesToExpectedContent([]);
-$testsConfiguration->setHasProtectedAccess(false);
-$testsConfiguration->setHasCharacterSheet(false);
-$testsConfiguration->setCanBeBoughtOnEshop(false);
-$testsConfiguration->setHasIntroduction(false);
