@@ -24,7 +24,7 @@
     přesto zlověstně, mocné pařáty se jen občas a jaksi mazlivě dotkly vzpřímených stébel Bojínku.
     <p>Měla jen jedinou, zato nepřekonatelnou chybu. Nikdo na ní nevěřil.</p>
   </div>
-  <p><?php include __DIR__ . '/../vendor/drd-plus/rules-html-skeleton/parts/rules-html-skeleton/debug_contacts.html'; ?>
+  <p><?php include __DIR__ . '/../../vendor/drd-plus/rules-skeleton/parts/rules-skeleton/debug_contacts.html'; ?>
     My už tu potvoru vrátíme nohama na zem.</p>
   <p>Každý střípek nám pomůže zlepšit pravidla a zážitek z DrD+. Děkujeme Ti.</p>
 </div>

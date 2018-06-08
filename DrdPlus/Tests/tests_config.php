@@ -11,3 +11,5 @@ $testsConfiguration->disableHasIntroduction();
 $testsConfiguration->disableHasCustomBodyContent();
 $testsConfiguration->setSomeExpectedTableIds(['tabulka_druhu_pohybu_nestvur']);
 $testsConfiguration->setBlockNamesToExpectedContent([]);
+$testsConfiguration->setExpectedWebName('DrD+ PJ bestiář');
+$testsConfiguration->setExpectedPageTitle('🐀 DrD+ PJ bestiář');
