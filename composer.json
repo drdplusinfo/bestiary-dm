@@ -42,7 +42,7 @@
     ],
     "post-install-cmd": [
       "./vendor/bin/assets --css --dir=css",
-      "wget https://bestiar.ppj.drdplus.info --post-data=\"trial=1\" --background --output-document=/dev/null --output-file=/dev/null >> /dev/null"
+      "wget https://bestiar.ppj.drdplus.info --post-data=\"trial=1\" --background --output-document=- --output-file=/dev/null >> /dev/null"
     ]
   }
 }
