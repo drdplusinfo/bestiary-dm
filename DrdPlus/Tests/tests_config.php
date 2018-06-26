@@ -14,3 +14,4 @@ $testsConfiguration->setBlockNamesToExpectedContent([]);
 $testsConfiguration->setExpectedWebName('DrD+ PJ bestiář');
 $testsConfiguration->setExpectedPageTitle('🐀 DrD+ PJ bestiář');
 $testsConfiguration->setExpectedGoogleAnalyticsId('UA-121206931-5');
+$testsConfiguration->disableHasMoreVersions();
