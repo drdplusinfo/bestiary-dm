@@ -1,16 +1,16 @@
 <?php
-$documentRoot = $documentRoot ?? (PHP_SAPI !== 'cli' ? \rtrim(\dirname($_SERVER['SCRIPT_FILENAME']), '\/') : \getcwd());
-$webRoot = $webRoot ?? $documentRoot . '/web/passed';
-$vendorRoot = $vendorRoot ?? $documentRoot . '/vendor';
+$masterDocumentRoot = $masterDocumentRoot ?? (PHP_SAPI !== 'cli' ? \rtrim(\dirname($_SERVER['SCRIPT_FILENAME']), '\/') : \getcwd());
+$documentRoot = $documentRoot ?? $masterDocumentRoot;
+$latestVersion = $latestVersion ?? '1.0';
 
-require_once $vendorRoot . '/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
+
+$dirs = new \DrdPlus\RulesSkeleton\Dirs($masterDocumentRoot, $documentRoot);
 
 $controller = $controller ?? new \DrdPlus\RulesSkeleton\RulesController(
         'UA-121206931-5',
-        \DrdPlus\RulesSkeleton\HtmlHelper::createFromGlobals($documentRoot),
-        $documentRoot,
-        $webRoot,
-        $vendorRoot
+        \DrdPlus\RulesSkeleton\HtmlHelper::createFromGlobals($dirs),
+        $dirs
     );
 $controller->setFreeAccess();
 
