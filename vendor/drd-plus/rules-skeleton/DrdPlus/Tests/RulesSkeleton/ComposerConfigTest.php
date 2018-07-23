@@ -22,29 +22,6 @@ class ComposerConfigTest extends \DrdPlus\Tests\FrontendSkeleton\ComposerConfigT
     /**
      * @test
      */
-    public function Libraries_git_dirs_are_removed(): void
-    {
-        $preAutoloadDumpScripts = static::$composerConfig['scripts']['pre-autoload-dump'] ?? [];
-        self::assertNotEmpty($preAutoloadDumpScripts, 'Missing pre-autoload-dump scripts');
-        if ($this->isSkeletonChecked()) {
-            self::assertNotContains(
-                'find ./vendor -type d -name .git -exec rm -fr {} +',
-                $preAutoloadDumpScripts,
-                'There is no reason to remove vendors .git dir in skeleton as vendor dir is not versioned'
-            );
-        } else {
-            self::assertContains(
-                'find ./vendor -type d -name .git -exec rm -fr {} +',
-                $preAutoloadDumpScripts,
-                'Missing vendors .git dir removal, there are configs '
-                . \preg_replace('~^Array\n\((.+)\)~', '$1', \var_export($preAutoloadDumpScripts, true))
-            );
-        }
-    }
-
-    /**
-     * @test
-     */
     public function PHPUnit_config_is_copied_from_skeleton(): void
     {
         $preAutoloadDumpScripts = static::$composerConfig['scripts']['pre-autoload-dump'] ?? [];
@@ -74,5 +51,27 @@ class ComposerConfigTest extends \DrdPlus\Tests\FrontendSkeleton\ComposerConfigT
             'Missing script to copy file for Google search console verification, there are configs '
             . \preg_replace('~^Array\n\((.+)\)~', '$1', \var_export($preAutoloadDumpScripts, true))
         );
+    }
+
+    /**
+     * @test
+     */
+    public function Generic_assets_are_hard_copied_from_libraries(): void
+    {
+        $preAutoloadDump = static::$composerConfig['scripts']['pre-autoload-dump'] ?? [];
+        self::assertNotEmpty($preAutoloadDump, 'Missing pre-autoload-dump scripts');
+        if ($this->isSkeletonChecked()) {
+            self::assertFalse(false, 'Skeleton does not have assets hard copied as it is their creator');
+
+            return;
+        }
+        foreach (['css', 'js', 'images'] as $assets) {
+            self::assertContains(
+                "rm -fr ./$assets/generic && cp -r ./vendor/drd-plus/rules-skeleton/$assets/generic ./$assets/",
+                $preAutoloadDump,
+                "Missing script to copy $assets assets, there are only scripts "
+                . \preg_replace('~^Array\n\((.+)\)~', '$1', \var_export($preAutoloadDump, true))
+            );
+        }
     }
 }
