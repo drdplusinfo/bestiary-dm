@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5fba8e80c4a9b4f99a6dffc33520b46a",
-    "content-hash": "7d9ea4f9e42df54f28c3cdb5c6f07f7a",
+    "hash": "509294d18a3f744e2d85fc6afee3204b",
+    "content-hash": "befb483461709141577475faf9346ae8",
     "packages": [
         {
             "name": "drd-plus/frontend-skeleton",
-            "version": "dev-master",
+            "version": "1.0.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jaroslavtyc/drd-plus-frontend-skeleton.git",
-                "reference": "953da0e59d240ec2f4e33bec9042baff53588a0f"
+                "reference": "a2e5ec8bfd8d132ab13a2c381ba68026686c15f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jaroslavtyc/drd-plus-frontend-skeleton/zipball/953da0e59d240ec2f4e33bec9042baff53588a0f",
-                "reference": "953da0e59d240ec2f4e33bec9042baff53588a0f",
+                "url": "https://api.github.com/repos/jaroslavtyc/drd-plus-frontend-skeleton/zipball/a2e5ec8bfd8d132ab13a2c381ba68026686c15f1",
+                "reference": "a2e5ec8bfd8d132ab13a2c381ba68026686c15f1",
                 "shasum": ""
             },
             "require": {
@@ -59,24 +59,24 @@
                 "pages",
                 "view"
             ],
-            "time": "2018-07-22 13:13:50"
+            "time": "2018-07-23 11:29:39"
         },
         {
             "name": "drd-plus/rules-skeleton",
-            "version": "dev-master",
+            "version": "1.0.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jaroslavtyc/drd-plus-rules-skeleton.git",
-                "reference": "d63f99fd9a468fc2fb656ba8373c39b83e06ce5c"
+                "reference": "986ac7a9f43c49805d82ad514345340001dee4b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jaroslavtyc/drd-plus-rules-skeleton/zipball/d63f99fd9a468fc2fb656ba8373c39b83e06ce5c",
-                "reference": "d63f99fd9a468fc2fb656ba8373c39b83e06ce5c",
+                "url": "https://api.github.com/repos/jaroslavtyc/drd-plus-rules-skeleton/zipball/986ac7a9f43c49805d82ad514345340001dee4b6",
+                "reference": "986ac7a9f43c49805d82ad514345340001dee4b6",
                 "shasum": ""
             },
             "require": {
-                "drd-plus/frontend-skeleton": "dev-master",
+                "drd-plus/frontend-skeleton": "~1.0",
                 "ext-mbstring": "*",
                 "php": ">=7.1",
                 "phpgt/dom": "~1.0",
@@ -106,7 +106,7 @@
                 "helper",
                 "rules"
             ],
-            "time": "2018-07-22 13:45:30"
+            "time": "2018-07-24 07:34:46"
         },
         {
             "name": "granam/exceptions-hierarchy",
@@ -2414,7 +2414,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drd-plus/rules-skeleton": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": true,
