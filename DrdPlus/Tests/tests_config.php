@@ -1,6 +1,6 @@
 <?php
 global $testsConfiguration;
-$testsConfiguration = new \DrdPlus\Tests\RulesSkeleton\TestsConfiguration('http://bestiar.ppj.drdplus.loc', 'https://bestiar.ppj.drdplus.info');
+$testsConfiguration = new \DrdPlus\Tests\RulesSkeleton\TestsConfiguration('https://bestiar.ppj.drdplus.info');
 $testsConfiguration->disableHasLinkToSingleJournal();
 $testsConfiguration->disableHasLinksToJournals();
 $testsConfiguration->disableHasLinkToSingleJournal();
