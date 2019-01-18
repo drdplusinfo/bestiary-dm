@@ -1,10 +1,9 @@
 web:
-  last_stable_version: '1.0'
   repository_url: git@bitbucket.org:drdplusinfo/bestiary-dm-web.git
   menu_position_fixed: false
   show_home_button: true
   protected_access: false
-  eshop_url: https://obchod.altar.cz/
+  eshop_url: https://obchod.altar.cz/drd-prirucka-pj-everze-p-1012.html
   name: DrD+ PJ bestiář
   title_smiley: 🐀
 google:

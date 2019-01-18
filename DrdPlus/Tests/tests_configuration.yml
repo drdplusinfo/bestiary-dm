@@ -1,0 +1,13 @@
+public_url: 'https://bestiar.ppj.drdplus.info'
+has_link_to_single_journal: false
+has_links_to_journals: false
+has_protected_access: false
+has_character_sheet: false
+has_custom_body_content: false
+some_expected_table_ids:
+  - 'tabulka_druhu_pohybu_nestvur'
+  - 'tabulka_zasazeneho_mista'
+block_names_to_expected_content: []
+expected_web_name: 'DrD+ PJ bestiář'
+expected_page_title: '🐀 DrD+ PJ bestiář'
+expected_google_analytics_id: 'UA-121206931-5'
