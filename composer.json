@@ -29,7 +29,7 @@
   },
   "scripts": {
     "pre-autoload-dump": [
-      "mkdir --parents DrdPlus/Tests && rm -f DrdPlus/Tests/RulesSkeleton && ln -s ../../vendor/drdplus/rules-skeleton/DrdPlus/Tests/RulesSkeleton DrdPlus/Tests"
+      "rm -f DrdPlus/Tests/RulesSkeleton && ln -s ../../vendor/drdplus/rules-skeleton/DrdPlus/Tests/RulesSkeleton DrdPlus/Tests/"
     ]
   }
 }
