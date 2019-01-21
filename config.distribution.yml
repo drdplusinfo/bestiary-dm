@@ -1,5 +1,4 @@
 web:
-  repository_url: git@bitbucket.org:drdplusinfo/bestiary-dm-web.git
   menu_position_fixed: false
   show_home_button: true
   protected_access: false
