@@ -7,7 +7,6 @@ has_custom_body_content: false
 some_expected_table_ids:
   - 'tabulka_druhu_pohybu_nestvur'
   - 'tabulka_zasazeneho_mista'
-block_names_to_expected_content: []
 expected_web_name: 'DrD+ PJ bestiář'
 expected_page_title: '🐀 DrD+ PJ bestiář'
 expected_google_analytics_id: 'UA-121206931-5'
