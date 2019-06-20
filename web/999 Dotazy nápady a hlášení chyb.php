@@ -24,8 +24,8 @@
     přesto zlověstně, mocné pařáty se jen občas a jaksi mazlivě dotkly vzpřímených stébel Bojínku.
     <p>Měla jen jedinou, zato nepřekonatelnou chybu. Nikdo na ní nevěřil.</p>
   </div>
-  <p><?= /** @noinspection PhpUndefinedVariableInspection */
-      $debugContacts ?>
+  <p><?= /** @var $webPartsContainer \DrdPlus\RulesSkeleton\Web\WebPartsContainer */
+      $webPartsContainer->getDebugContactsBody() ?>
     My už tu potvoru vrátíme nohama na zem.</p>
   <p>Každý střípek nám pomůže zlepšit pravidla a zážitek z DrD+. Děkujeme Ti.</p>
 </div>
@@ -33,4 +33,4 @@
 <h2>Konec</h2>
 <div>
   A to je konec... Co? Kdepak, to je začátek. Vzhůru za dobrodružstvím!
-</div>
+</div>ca

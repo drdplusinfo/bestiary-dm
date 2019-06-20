@@ -2,8 +2,8 @@ web:
   menu_position_fixed: false
   show_home_button: true
   protected_access: false
-  eshop_url: https://obchod.altar.cz/drd-prirucka-pj-everze-p-1012.html
-  name: DrD+ PJ bestiář
-  title_smiley: 🐀
+  eshop_url: 'https://obchod.altar.cz/drd-prirucka-pj-everze-p-1012.html'
+  name: 'DrD+ PJ bestiář'
+  title_smiley: '🐀'
 google:
-  analytics_id: UA-121206931-5
+  analytics_id: 'UA-121206931-5'
