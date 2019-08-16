@@ -1,9 +1,9 @@
-<?php
-declare(strict_types=1);
+<?php declare(strict_types=1);
 
 namespace DrdPlus\Tests\RulesSkeleton\Web;
 
 use DrdPlus\RulesSkeleton\HtmlHelper;
+use DrdPlus\RulesSkeleton\Request;
 use Gt\Dom\Element;
 use Gt\Dom\Node;
 
@@ -167,5 +167,21 @@ class RulesMainContentTest extends MainContentTest
         }
         $routedContent = $this->getHtmlDocument([], [], [], '/routed')->getElementById('just_some_element_from_routed_content');
         self::assertNotEmpty($routedContent);
+
+        $hyphenRoutedContent = $this->getHtmlDocument([], [], [], '/draci-a-dracata')->getElementById('just_some_element_from_draci_a_dracata');
+        self::assertNotEmpty($hyphenRoutedContent);
+    }
+
+    /**
+     * @test
+     */
+    public function I_will_get_pretty_not_found_page_on_unknown_route()
+    {
+        $nonExistingRoute = $this->getTestsConfiguration()->getLocalUrl() . '/' . uniqid('non-existing-route-', true);
+        $this->passIn();
+        $response = $this->fetchContentFromUrl($nonExistingRoute . '?' . Request::TRIAL . '=1', true);
+        $this->passOut();
+        self::assertSame(404, $response['responseHttpCode']);
+        self::assertStringContainsStringIgnoringCase('kde nic tu nic', $response['content']);
     }
 }
