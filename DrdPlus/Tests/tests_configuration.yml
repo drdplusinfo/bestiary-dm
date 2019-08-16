@@ -3,6 +3,7 @@ has_link_to_single_journal: false
 has_links_to_journals: false
 has_protected_access: false
 has_character_sheet: false
+has_pdf: false
 has_custom_body_content: false
 some_expected_table_ids:
   - 'tabulka_druhu_pohybu_nestvur'
