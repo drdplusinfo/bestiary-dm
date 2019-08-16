@@ -371,17 +371,17 @@
     },
     {
         "name": "drdplus/rules-skeleton",
-        "version": "1.4.3",
-        "version_normalized": "1.4.3.0",
+        "version": "1.4.4",
+        "version_normalized": "1.4.4.0",
         "source": {
             "type": "git",
             "url": "https://github.com/drdplusinfo/rules-skeleton.git",
-            "reference": "9abc2486fd99da529f2c4ec94f037c68305b3a67"
+            "reference": "2fb62a39a5e7521f0bfc1e90f819199dc701fee0"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/drdplusinfo/rules-skeleton/zipball/9abc2486fd99da529f2c4ec94f037c68305b3a67",
-            "reference": "9abc2486fd99da529f2c4ec94f037c68305b3a67",
+            "url": "https://api.github.com/repos/drdplusinfo/rules-skeleton/zipball/2fb62a39a5e7521f0bfc1e90f819199dc701fee0",
+            "reference": "2fb62a39a5e7521f0bfc1e90f819199dc701fee0",
             "shasum": ""
         },
         "require": {
@@ -418,7 +418,7 @@
             "phpunit/phpunit": "^7.5",
             "roave/security-advisories": "dev-master"
         },
-        "time": "2019-08-16T07:54:12+00:00",
+        "time": "2019-08-16T10:58:22+00:00",
         "bin": [
             "bin/fix_web_permissions.sh"
         ],
