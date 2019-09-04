@@ -88,8 +88,9 @@ HTML
      * @param string $topId
      * @param string $htmlWithId
      * @param array $expectedAnchors
+     * @param string $expectedHtmlWithId = null
      */
-    public function I_can_wrap_id_by_anchor_to_it(string $topId, string $htmlWithId, array $expectedAnchors): void
+    public function I_can_wrap_id_by_anchor_to_it(string $topId, string $htmlWithId, array $expectedAnchors, string $expectedHtmlWithId = null): void
     {
         $htmlHelper = $this->getHtmlHelper();
         $withAnchorsOnIds = $htmlHelper->addAnchorsToIds(new HtmlDocument(<<<HTML
@@ -111,12 +112,15 @@ HTML
                 'Expected different anchor from ' . $withAnchorsOnIds->saveHTML()
             );
         }
+        if ($expectedHtmlWithId !== null) {
+            self::assertSame($expectedHtmlWithId, $elementWithId->outerHTML, 'Expected different content');
+        }
     }
 
     public function provideHtmlWithId(): array
     {
         return [
-            'div with ID' => ['some_id', '<div id="some_id">Foo</div>', ['<a href="#some_id">Foo</a>']],
+            /*'div with ID' => ['some_id', '<div id="some_id">Foo</div>', ['<a href="#some_id">Foo</a>']],
             'div with span with ID' => ['some_id', '<div><span id="some_id">Foo</span></div>', ['<a href="#some_id">Foo</a>']],
             'div with div with ID and div with span' => [
                 'some_id',
@@ -137,6 +141,71 @@ HTML
                 'some_heading',
                 '<h1 id="some_heading" class="' . HtmlHelper::CLASS_WITHOUT_ANCHOR_TO_ID . '">Some heading</h1>',
                 [],
+            ],
+            'div with content in sub-div' => [
+                'some_div',
+                '<div id="some_div"><div>Some content in sub-div</div></div>',
+                ['<a href="#some_div">Some content in sub-div</a>'],
+                '<div id="some_div"><div><a href="#some_div">Some content in sub-div</a></div></div>',
+            ],
+            'div with content in sub-div but also text content after' => [
+                'some_div_with_sub_sub_div',
+                '<div id="some_div_with_sub_sub_div"><div><div>Some content in sub-sub-div</div></div>Some text after</div>',
+                ['<a href="#some_div_with_sub_sub_div">Some content in sub-sub-div</a>'],
+                <<<HTML
+<div id="some_div_with_sub_sub_div">
+<div><div><a href="#some_div_with_sub_sub_div">Some content in sub-sub-div</a></div></div>Some text after</div>
+HTML
+                ,
+            ],
+            'with white space content only and sub-div with text content' => [
+                'with_white_space_content_and_filled_sub_dir',
+                <<<HTML
+<div id="with_white_space_content_and_filled_sub_dir">    
+
+<div>Some content</div>
+
+</div>
+HTML
+                ,
+                ['<a href="#with_white_space_content_and_filled_sub_dir">Some content</a>'],
+                <<<HTML
+<div id="with_white_space_content_and_filled_sub_dir">    
+
+<div><a href="#with_white_space_content_and_filled_sub_dir">Some content</a></div>
+
+</div>
+HTML
+                ,
+            ],
+            'with single non-empty table head cell' => [
+                'with_single_non_empty_table_head_cell',
+                <<<HTML
+<table id="with_single_non_empty_table_head_cell">
+<thead>
+<tr>
+<th>Inside table head cell</th>
+</tr>
+</thead>
+</table>
+HTML
+                ,
+                ['<a href="#with_single_non_empty_table_head_cell">Inside table head cell</a>'],
+            ],*/
+            'with single non-empty table caption' => [
+                'with_single_non_empty_table_caption',
+                <<<HTML
+<table id="with_single_non_empty_table_caption">
+<caption>Inside caption</caption>
+<thead>
+<tr>
+<th>Inside table head cell</th>
+</tr>
+</thead>
+</table>
+HTML
+                ,
+                ['<a href="#with_single_non_empty_table_caption">Inside caption</a>'],
             ],
         ];
     }
