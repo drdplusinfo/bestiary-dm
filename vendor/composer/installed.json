@@ -371,12 +371,18 @@
     },
     {
         "name": "drdplus/rules-skeleton",
-        "version": "1.6.10",
-        "version_normalized": "1.6.10.0",
+        "version": "1.6.11",
+        "version_normalized": "1.6.11.0",
         "source": {
             "type": "git",
-            "url": "../rules.skeleton",
-            "reference": "df86281f24d72767b0fb63ddc4c38edba124275b"
+            "url": "https://github.com/drdplusinfo/rules-skeleton.git",
+            "reference": "45a230e6555a87aca5e4ffa4009805162386e94b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/drdplusinfo/rules-skeleton/zipball/45a230e6555a87aca5e4ffa4009805162386e94b",
+            "reference": "45a230e6555a87aca5e4ffa4009805162386e94b",
+            "shasum": ""
         },
         "require": {
             "composer-plugin-api": "^1.0",
@@ -408,7 +414,7 @@
             "phpunit/phpunit": "^8.3",
             "roave/security-advisories": "dev-master"
         },
-        "time": "2019-09-05T05:49:20+00:00",
+        "time": "2019-09-05T07:50:26+00:00",
         "bin": [
             "bin/fix_web_permissions.sh"
         ],
@@ -422,23 +428,16 @@
                 "DrdPlus\\": "DrdPlus/"
             }
         },
-        "scripts": {
-            "post-update-cmd": [
-                "php vendor/bin/assets --css --dir=css"
-            ],
-            "post-install-cmd": [
-                "php vendor/bin/assets --css --dir=css"
-            ]
-        },
+        "notification-url": "https://packagist.org/downloads/",
         "license": [
             "MIT"
         ],
         "description": "Skeleton for DrD+ rules as HTML",
         "keywords": [
+            "Skeleton",
             "drd plus",
             "helper",
-            "rules",
-            "skeleton"
+            "rules"
         ]
     },
     {
@@ -829,17 +828,17 @@
     },
     {
         "name": "granam/web-content-builder",
-        "version": "2.1.0",
-        "version_normalized": "2.1.0.0",
+        "version": "2.1.1",
+        "version_normalized": "2.1.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/granam/web-content-builder.git",
-            "reference": "daef450bc88d448bb36d2986cb636d75e3dd655d"
+            "reference": "e2f9c54f89852b83897b3f18faf5d59f682d83a4"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/granam/web-content-builder/zipball/daef450bc88d448bb36d2986cb636d75e3dd655d",
-            "reference": "daef450bc88d448bb36d2986cb636d75e3dd655d",
+            "url": "https://api.github.com/repos/granam/web-content-builder/zipball/e2f9c54f89852b83897b3f18faf5d59f682d83a4",
+            "reference": "e2f9c54f89852b83897b3f18faf5d59f682d83a4",
             "shasum": ""
         },
         "require": {
@@ -859,7 +858,7 @@
             "phpunit/phpunit": "^8.3",
             "roave/security-advisories": "dev-master"
         },
-        "time": "2019-09-04T07:32:53+00:00",
+        "time": "2019-09-05T07:19:28+00:00",
         "bin": [
             "bin/assets"
         ],
