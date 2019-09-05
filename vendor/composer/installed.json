@@ -371,18 +371,12 @@
     },
     {
         "name": "drdplus/rules-skeleton",
-        "version": "1.6.4",
-        "version_normalized": "1.6.4.0",
+        "version": "1.6.10",
+        "version_normalized": "1.6.10.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/drdplusinfo/rules-skeleton.git",
-            "reference": "a69a00905f11dfef571b5250b3520bb85347f38a"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/drdplusinfo/rules-skeleton/zipball/a69a00905f11dfef571b5250b3520bb85347f38a",
-            "reference": "a69a00905f11dfef571b5250b3520bb85347f38a",
-            "shasum": ""
+            "url": "../rules.skeleton",
+            "reference": "df86281f24d72767b0fb63ddc4c38edba124275b"
         },
         "require": {
             "composer-plugin-api": "^1.0",
@@ -414,7 +408,7 @@
             "phpunit/phpunit": "^8.3",
             "roave/security-advisories": "dev-master"
         },
-        "time": "2019-09-04T10:44:37+00:00",
+        "time": "2019-09-05T05:49:20+00:00",
         "bin": [
             "bin/fix_web_permissions.sh"
         ],
@@ -422,22 +416,29 @@
         "extra": {
             "class": "DrdPlus\\RulesSkeleton\\SkeletonInjectorComposerPlugin"
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "DrdPlus\\": "DrdPlus/"
             }
         },
-        "notification-url": "https://packagist.org/downloads/",
+        "scripts": {
+            "post-update-cmd": [
+                "php vendor/bin/assets --css --dir=css"
+            ],
+            "post-install-cmd": [
+                "php vendor/bin/assets --css --dir=css"
+            ]
+        },
         "license": [
             "MIT"
         ],
         "description": "Skeleton for DrD+ rules as HTML",
         "keywords": [
-            "Skeleton",
             "drd plus",
             "helper",
-            "rules"
+            "rules",
+            "skeleton"
         ]
     },
     {
@@ -567,17 +568,17 @@
     },
     {
         "name": "granam/git",
-        "version": "1.2.5",
-        "version_normalized": "1.2.5.0",
+        "version": "1.2.6",
+        "version_normalized": "1.2.6.0",
         "source": {
             "type": "git",
             "url": "https://github.com/granam/git.git",
-            "reference": "4ab6eb312a0b7cb4ac1c414ccc84f1f80341d796"
+            "reference": "d01c93b17c15996dd7f96092e06b64739a3606bc"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/granam/git/zipball/4ab6eb312a0b7cb4ac1c414ccc84f1f80341d796",
-            "reference": "4ab6eb312a0b7cb4ac1c414ccc84f1f80341d796",
+            "url": "https://api.github.com/repos/granam/git/zipball/d01c93b17c15996dd7f96092e06b64739a3606bc",
+            "reference": "d01c93b17c15996dd7f96092e06b64739a3606bc",
             "shasum": ""
         },
         "require": {
@@ -588,7 +589,7 @@
             "granam/exceptions-hierarchy": "^5.0",
             "phpunit/phpunit": "^8.3"
         },
-        "time": "2019-08-26T13:33:59+00:00",
+        "time": "2019-09-04T11:51:57+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
