@@ -6,6 +6,7 @@ has_character_sheet: false
 has_pdf: false
 has_custom_body_content: false
 has_marked_result: false
+has_tables_related_content: false
 some_expected_table_ids:
   - 'tabulka_druhu_pohybu_nestvur'
   - 'tabulka_zasazeneho_mista'
