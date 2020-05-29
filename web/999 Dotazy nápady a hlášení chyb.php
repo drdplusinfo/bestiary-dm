@@ -33,4 +33,4 @@
 <h2>Konec</h2>
 <div>
   A to je konec... Co? Kdepak, to je začátek. Vzhůru za dobrodružstvím!
-</div>ca
+</div>
