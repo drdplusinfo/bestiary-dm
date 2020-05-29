@@ -31,3 +31,9 @@
 
 - regex: 'NetSurf'
   name: 'NetSurf'
+
+- regex: 'Servo'
+  name: 'Servo'
+
+- regex: 'Goanna'
+  name: 'Goanna'
